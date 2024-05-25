@@ -1,1 +1,8 @@
 youtube_transcript_api
+feedparser
+plotly
+pandas
+streamlit
+requests
+textblob
+yfinance
