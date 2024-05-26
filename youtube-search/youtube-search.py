@@ -27,15 +27,14 @@ def get_videos(query):
     return videos
 
 def main():
-    st.title('Pencil Sketch Drawing Tutorial Finder')
-    st.write('Enter the type of sketch you want to draw:')
+    st.title('YouTube video search')
     
     # Text input for user query
-    query = st.text_input('Sketch type', '')
+    query = st.text_input('Enter the topic for search', '')
     if query:
-        st.write('Searching for tutorials on:', query)
+        st.write('Links to YouTube videos you are looking for:', query)
         # Fetch videos
-        videos = get_videos(f"{query} pencil sketch tutorial")
+        videos = get_videos(f"{query}")
         
         if videos:
             st.write('Top tutorials:')
